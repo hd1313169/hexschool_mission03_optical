@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.blog-nav-bg {
+  background-color: #650300; }
+
+.blog-nav-container {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog-nav a:hover {
+  text-decoration: underline; }
+
+.blog-search-bar {
+  display: none; }
+
+.blog-search-btn {
+  background-color: #650300;
+  border: none;
+  vertical-align: middle; }
+
+.blog-title::before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  background-color: #9F1213;
+  width: 8px;
+  height: 48px;
+  margin-right: 16px; }
+
+.blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.blog-img {
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center; }
+
+.blog-content {
+  width: 50%; }
+
+.blog-tablet-txt {
+  display: none; }
+
+.blog-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.blog-item a:hover {
+  text-decoration: underline; }
+
+.blog-content h2 a:hover {
+  text-decoration: none;
+  font-weight: 700; }
+
+/* 頁籤 */
+.pageNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px; }
+
+.pageNav a:hover {
+  background-color: #AA0601;
+  color: #fff; }
+
+.pageTurning {
+  display: block;
+  border: 1px solid #555555;
+  padding: 12px 12px;
+  color: #555555; }
+
+.pageDirect {
+  display: block;
+  border: 1px solid #555555;
+  padding: 12px 16px;
+  color: #555555; }
+
+.pageDirect-focus {
+  background-color: #000;
+  color: #fff; }
+
+/* 頁籤END */
+
+/*# sourceMappingURL=blog.css.map */

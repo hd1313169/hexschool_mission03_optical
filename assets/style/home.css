@@ -4,51 +4,10 @@
   margin: 0 auto;
   padding: 0 12px; }
 
-/* 導覽列 */
-.nav {
-  background-color: #AA0601;
-  padding: 16px 0; }
-
-.nav-container {
-  width: 67.5%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.logo a {
-  display: block;
-  width: 80px;
-  height: 48.5px;
-  background: url(img/logo-white.png);
-  background-size: cover;
-  background-position: center center;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.menu a:hover {
-  text-decoration: underline; }
-
-/* 導覽列 end */
 /* banner */
 .header {
   height: 787px;
-  background-image: url(img/home-header.png);
+  background-image: url(../images/home-header.png);
   background-size: cover;
   background-position: center; }
 
@@ -107,7 +66,7 @@
 /* 聯名設計 */
 .co-brand-bg {
   /* height: 608px; */
-  background-image: url(img/index-bg.png);
+  background-image: url(../images/index-bg.png);
   background-size: cover;
   padding: 80px 0; }
 
@@ -176,51 +135,5 @@ label {
   background-color: #650300; }
 
 /* 聯絡我們END */
-/* footer */
-.footer-bg {
-  background-color: #AA0601;
-  padding: 48px 0 32px 0; }
-
-.footer-container {
-  width: 67.5%;
-  margin: 0 auto; }
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start; }
-
-.subMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.social img {
-  width: 48px; }
-
-.social a:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%); }
-
-.copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 32px;
-  border-top: 1px solid #fff; }
-
-.footer-container a:hover {
-  text-decoration: underline; }
-
-/* footer END */
 
 /*# sourceMappingURL=home.css.map */
