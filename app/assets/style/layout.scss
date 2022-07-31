@@ -4,17 +4,21 @@
     padding: 0 12px;
 }
 
-/* 導覽列 */
+// 導覽列
+
+// 底部
 .nav-bg{
     background-color: #AA0601;
     padding: 16px 0;
 }
 
+// 容器
 .nav-container{
     display: flex;
     justify-content: space-between;
 }
 
+// 標誌
 .logo a{
     display:block;
     width:80px;
@@ -26,6 +30,8 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+// 選單
 .menu{
     display: flex;
     justify-content: start;
@@ -35,23 +41,9 @@
         text-decoration: underline;
     }
 }
-/* 導覽列 end */
+// 導覽列END
 
-/* 商品分類 */
-.category{
-    display: flex;
-    justify-content: center;
-}
-.category-item{
-    width: 33.3%;
-    padding: 16px 0;
-}
-.category-item:hover{
-    border-bottom: 8px solid #AA0601;
-}
-/* 商品分類END */
-
-/* 頁籤 */
+// 頁籤
 .pageNav{
     display: flex;
     justify-content: center;
@@ -62,44 +54,63 @@
         color: #fff;
     }
 }
+
+// 前後頁
 .pageTurning{
     display: block;
     border: 1px solid #555555;
     padding: 12px 12px;
     color: #555555;
 }
+
+// 頁數
 .pageDirect{
     display: block;
     border: 1px solid #555555;
     padding: 12px 16px;
     color: #555555;
 }
+
+// 現在位置
 .pageDirect-focus{
     background-color: #000;
     color: #fff;
 }
 
-/* 頁籤END */
+// 頁籤END
 
-/* footer */
+// footer
+// 底色
 .footer-bg{
     background-color: #AA0601;
     padding: 48px 0 32px 0;
 }
+
+// 容器
 .footer{
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
+
+// 目錄
 .subMenu{
     display: flex;
 }
-.social img{
+
+// 社群icon
+.social{
+
+    img{
     width: 48px;
-}
-.social a:hover{
+    }
+
+    a:hover{
     filter:brightness(80%);
+    }
 }
+
+// 版權
 .copyright{
     display: flex;
     justify-content: space-between;
@@ -109,31 +120,17 @@
 .footer-container a:hover{
     text-decoration: underline;
 }
-/* footer END */
+// footer END
 
 
 // RWD平板
-    // 導覽列
-    @media (max-width: 992px){
-        .container{
-            width: 100%;
-            padding: 0 36px;
-        }
+@media (max-width: 992px){
 
-
-    // 商品分類
-    .category-container{
+    // 容器
+    .container{
         width: 100%;
+        padding: 0 36px;
     }
-    .category-item{
-        width: 33.3%;
-        padding: 16px 0;
-    }
-    .category-item a{
-        font-size: 24px;
-        font-weight: 700;
-    }
-    // 商品分類END
 
     // footer
     .footer-container{
@@ -147,6 +144,7 @@
 // RWD手機
 @media (max-width: 767px){
 
+    // 容器
     .container{
         width: 100%;
         padding: 0 16px;
@@ -156,7 +154,6 @@
     .nav-bg{
         padding: 0;
     }
-
     .nav-container{
         width: 100%;
         flex-wrap: wrap;
@@ -168,11 +165,9 @@
         margin: 0 auto;
         padding: 16px 0;
     }
-
     .menu{
         width: 100%;
-        flex-wrap: wrap;
-    
+        flex-wrap: wrap;  
         li{
             width: 50%;
             padding: 12px 62px;
@@ -186,21 +181,8 @@
     }
     // 導覽列END
 
-    // 商品分類
-    .category-container{
-        margin-bottom: -40px;
-    }
-    .category{
-        justify-content: space-between;
-    }
-    .category-item a{
-        font-size: 16px;
-        font-weight: 700;
-    }
-    // 商品分類END
-
     // 頁籤
-        .pageNav{
+    .pageNav{
         width: 100%;
         padding: 0 13px;
         font-size: 14px;
