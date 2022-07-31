@@ -43,6 +43,35 @@
 }
 // 導覽列END
 
+// 部落格導覽
+.blog-nav-bg{
+    background-color: #650300;
+}
+.blog-nav-container{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-nav{
+    display: flex;
+    align-items: center;
+}
+
+.blog-nav a:hover{
+    text-decoration: underline;
+}
+.blog-search-bar{
+    display: none;
+}
+
+.blog-search-btn{
+    background-color: #650300;
+    border: none;
+    vertical-align:middle;  
+}
+// 部落格導覽END
+
 // 頁籤
 .pageNav{
     display: flex;
@@ -132,6 +161,13 @@
         padding: 0 36px;
     }
 
+    // 部落格導覽
+    .blog-nav-container{
+        width: 100%;
+        padding: 0 42px 0 36px;
+    }
+    // 部落格導覽END
+
     // footer
     .footer-container{
         width: 100%;
@@ -180,6 +216,12 @@
         }
     }
     // 導覽列END
+
+    // 部落格導覽
+    .blog-nav-bg{
+        display: none;
+    }
+    // 部落格導覽END
 
     // 頁籤
     .pageNav{

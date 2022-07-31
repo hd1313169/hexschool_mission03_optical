@@ -1,0 +1,140 @@
+// 部落格導覽
+.blog-title{
+    margin-top: 96px;
+}
+
+.blog-title::before{
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    background-color: #9F1213;
+    width: 8px;
+    height: 48px;
+    margin-right: 16px;
+}
+.blog-item{
+    display: flex;
+    position: relative;
+}
+.blog-img{
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blog-img-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-content{
+    width: 50%;
+}
+
+.blog-tablet-txt{
+    display: none;
+}
+.blog-tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.blog-item a:hover{
+    text-decoration: underline;
+}
+.blog-content h2 a:hover{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+// 部落格導覽END
+
+// RWD平板
+@media (max-width: 992px){
+    
+    /* 部落格 */
+    .blog-container{
+        width: 100%;
+        padding: 0 36px;
+        margin-bottom: 80px;
+    }
+
+    .blog-title{
+        margin-top: 80px;
+    }
+
+    .blog-item a:hover{
+        text-decoration: none;
+    }
+    .blog-img{
+        width: 50%;
+        height: 208px;
+    }
+ 
+    .blog-content h2{
+        font-size: 24px;
+    }
+ 
+    .blog-tag{
+        margin-bottom: 4px;
+    }
+    .blog-tag h3{
+        font-size: 16px;
+    }
+    .blog-tag p{
+        font-size: 16px;
+    }
+    .blog-pc-txt{
+        display: none;
+    }
+    .blog-tablet-txt{
+        display: block;
+    }
+    .blog-btn{
+        display: none;
+    }
+    /* 部落格END */
+}
+// RWD平板END
+
+// RWD手機
+@media (max-width: 767px){
+
+    /* 部落格 */
+    .blog-title{
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+    .blog-title::before{
+        height: 36px;
+    }
+    .blog{
+        margin-bottom: 64px;
+    }
+    .blog-item{
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    .blog-img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .blog-content{
+        width: 100%;
+    }
+    .blog-tablet-txt{
+        display: none;
+    }
+    /* 部落格END */
+}
+// RWD手機END
+
