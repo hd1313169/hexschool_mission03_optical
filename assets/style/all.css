@@ -1168,4 +1168,121 @@ label {
   .stores-item-txt {
     width: 100%; } }
 
+.stores-title {
+  margin-top: 96px; }
+
+.stores-title::before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  background-color: #9F1213;
+  width: 8px;
+  height: 48px;
+  margin-right: 16px; }
+
+.stores-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 41px; }
+
+.stores-dropDown {
+  width: 23.4%;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #495057;
+  opacity: 75%;
+  border: 1px solid #CED4DA;
+  border-radius: 0%;
+  padding: 6px 12px; }
+
+.stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px; }
+
+.stores-item {
+  width: 40.6%;
+  margin-bottom: 48px; }
+
+.stores-item-title {
+  padding: 8px 24px;
+  border: 1px solid #00000020; }
+
+.stores-item-content {
+  padding: 16px 24px;
+  border: 1px solid #00000020; }
+
+.material-symbols-outlined {
+  margin-right: 11px; }
+
+.stores-map {
+  width: 57.6%;
+  max-height: 100%;
+  background-image: url(../images/map_demo.png);
+  background-size: cover;
+  background-position: center center; }
+
+@media (max-width: 992px) {
+  .stores-container {
+    width: 100%;
+    padding: 0 36px 0 35px;
+    margin-bottom: 80px; }
+  .stores-title {
+    margin-top: 80px; }
+  .stores {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .stores-dropDown {
+    width: 30.6%; }
+  .stores {
+    margin: 0 auto;
+    margin-bottom: 24px; }
+  .stores-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 24px; }
+    .stores-item img {
+      width: 43.9%;
+      margin-right: 24px; }
+  .stores-item-txt {
+    width: 43.9%; }
+  .stores-map {
+    width: 100%;
+    height: 414px; } }
+
+@media (max-width: 767px) {
+  .stores-container {
+    width: 100%;
+    padding: 0 14px 0 13px; }
+  .stores-title {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px; }
+  .stores-title::before {
+    height: 36px; }
+  .stores-select h3 {
+    font-size: 16px; }
+  .stores-dropDown {
+    width: 73.6%; }
+  .stores {
+    margin-bottom: 64px; }
+  .stores-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px; }
+    .stores-item img {
+      width: 100%; }
+  .stores-item-txt {
+    width: 100%; } }
+
 /*# sourceMappingURL=all.css.map */
