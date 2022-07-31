@@ -1,0 +1,265 @@
+.container{
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* 導覽列 */
+.nav-bg{
+    background-color: #AA0601;
+    padding: 16px 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a{
+    display:block;
+    width:80px;
+    height: 48.5px;
+    background:url(../images/logo-white.png);
+    background-size: cover;
+    background-position: center center;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+/* 導覽列 end */
+
+/* 商品分類 */
+.category{
+    display: flex;
+    justify-content: center;
+}
+.category-item{
+    width: 33.3%;
+    padding: 16px 0;
+}
+.category-item:hover{
+    border-bottom: 8px solid #AA0601;
+}
+/* 商品分類END */
+
+/* 頁籤 */
+.pageNav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    a:hover{
+        background-color: #AA0601;
+        color: #fff;
+    }
+}
+.pageTurning{
+    display: block;
+    border: 1px solid #555555;
+    padding: 12px 12px;
+    color: #555555;
+}
+.pageDirect{
+    display: block;
+    border: 1px solid #555555;
+    padding: 12px 16px;
+    color: #555555;
+}
+.pageDirect-focus{
+    background-color: #000;
+    color: #fff;
+}
+
+/* 頁籤END */
+
+/* footer */
+.footer-bg{
+    background-color: #AA0601;
+    padding: 48px 0 32px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.subMenu{
+    display: flex;
+}
+.social img{
+    width: 48px;
+}
+.social a:hover{
+    filter:brightness(80%);
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid #fff;
+}
+.footer-container a:hover{
+    text-decoration: underline;
+}
+/* footer END */
+
+
+// RWD平板
+    // 導覽列
+    @media (max-width: 992px){
+        .container{
+            width: 100%;
+            padding: 0 36px;
+        }
+
+
+    // 商品分類
+    .category-container{
+        width: 100%;
+    }
+    .category-item{
+        width: 33.3%;
+        padding: 16px 0;
+    }
+    .category-item a{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    // 商品分類END
+
+    // footer
+    .footer-container{
+        width: 100%;
+        padding: 0 36px;
+        }
+    // footer END
+}
+// RWD平板END
+
+// RWD手機
+@media (max-width: 767px){
+
+    .container{
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    // 導覽列
+    .nav-bg{
+        padding: 0;
+    }
+
+    .nav-container{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0;
+
+    }
+    .logo{
+        margin: 0 auto;
+        padding: 16px 0;
+    }
+
+    .menu{
+        width: 100%;
+        flex-wrap: wrap;
+    
+        li{
+            width: 50%;
+            padding: 12px 62px;
+            border: 1px solid #fff;
+        }
+
+        a{
+            margin: 0 auto;
+            font-size: 14px;
+        }
+    }
+    // 導覽列END
+
+    // 商品分類
+    .category-container{
+        margin-bottom: -40px;
+    }
+    .category{
+        justify-content: space-between;
+    }
+    .category-item a{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    // 商品分類END
+
+    // 頁籤
+        .pageNav{
+        width: 100%;
+        padding: 0 13px;
+        font-size: 14px;
+        margin-bottom: 64px;
+    }
+    .pageTurning{
+        padding: 11px 13px 12px 14px;
+    }
+    .pageDirect{
+        padding: 12px 15px 12px 16px;
+    }
+    // 頁籤END
+        
+    // footer
+    .footer-bg{
+        padding: 0;
+    }
+
+    .footer-container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px 16px 24px 16px;
+    }
+
+    .contact-item a{
+        font-size: 16px;
+    }
+
+    .subMenu{
+        display: none;
+    }
+
+    .social{ 
+        a{
+            margin-right: 8px;
+        }
+
+        img{
+            width: 24px;
+        }
+    }
+
+    .copyright{
+        flex-direction: column;
+        padding-top: 24px;
+    }
+
+    .term{
+        display: flex;
+        flex-direction: column;
+        
+        a{
+            margin-bottom: 8px;
+        }
+    }
+
+    .copyright-content{
+        margin-bottom: 16px;
+    } 
+    /* footerEND*/
+}
+// RWD手機END

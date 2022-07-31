@@ -1,0 +1,272 @@
+// banner
+.header{
+    height: 787px;
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-position: center;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: right;
+    padding-top: 296px;
+
+    a{
+        display: block;
+        background-color: #AA0601;
+        padding: 6px 12px;
+    }
+
+    .slogan a:hover{
+        background-color: #650300;
+    }
+}
+// banner END
+
+// 品牌介紹
+.intro{
+    display: flex;
+}
+.intro-item{
+    width: 23.6%;
+}
+.intro-icon{
+    width: 84px;
+    height: 84px;
+}
+// 品牌介紹END
+
+// 經典系列
+.classicalSeries{
+    display: flex;
+}
+
+.classicalSeries-item{
+    width: 30%;   
+
+    a:hover{
+        filter:brightness(80%);
+    }
+}
+// 經典系列END
+
+
+// 聯名設計
+.co-brand-bg{
+    /* height: 608px; */
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.co-brand{
+    margin: 0 auto;
+    display: flex;
+
+    a{
+        width: 50%;
+    }
+
+    a:hover{
+        filter:brightness(80%);
+    }
+
+    a p{
+        padding: 8px 0;
+    }
+}
+
+.co-brand-item{
+    background-color: #fff;
+}
+// 聯名設計 end
+
+// 顧客推薦
+.recommend{
+    display: flex;
+}
+
+.recommend-item{
+    width: 23.6%;  
+    border: 1px solid #DEE2E6;
+    box-shadow: 0 2px 6px #00000029; 
+}
+
+.recommend-content{
+    padding: 16px;
+}
+// 顧客推薦END
+
+
+// 聯絡我們
+.contact-container{
+    width: 33.1%;
+    margin: 0 auto;
+}
+label{
+    display: block;
+}
+.contact-input{
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 0%;
+    border: 1px solid #000;
+}
+.contact-comfirm{
+    display: block;
+    width: 65.4%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #AA0601;
+    border: none;
+    color: white;
+    padding: 16px 0px;
+    margin-bottom: 80px;
+
+    a:hover{
+        background-color: #650300;
+    }
+}
+// 聯絡我們END
+
+// RWD平板
+@media (max-width: 992px){
+
+    .classicalSeries-item a{
+        font-size: 28px;
+    }
+}
+// RWD平板END
+
+// RWD手機
+
+@media (max-width: 767px){
+
+    // banner
+    .header{
+        height: 400px;
+        background-position: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container{
+        width: 100%;
+    }
+    .slogan{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    
+        h3{
+            width: 100%;
+            font-size: 24px;
+        }
+        h2{
+            font-size: 36px;
+        }
+    }
+    // banner END
+
+    // 品牌介紹 
+    .intro-title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .intro{
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+    }
+    .intro-item{
+        width: 100%;
+        margin-bottom: 36px;
+    }   
+    // 品牌介紹 END 
+
+    // 經典系列
+    .classicalSeries-container{
+        width: 100%;
+    }
+    .classical-title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .classicalSeries{
+        flex-wrap: wrap; 
+        margin-bottom: 48px;   
+    }
+    
+    .classicalSeries-item{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 48px;
+    
+        a{
+            font-size: 32px;
+        }
+    }
+    // 經典系列END
+
+    // 聯名設計
+    .co-brand-bg{
+        padding: 40px 0;
+    }
+    .co-brand-container{
+        width: 100%;
+    }
+    .co-brand-title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .co-brand{
+        flex-wrap: wrap;
+
+        a p{
+            font-size: 32px;
+        }
+    }
+    .co-brand-item{
+        margin-bottom: 24px;
+    }
+
+    // 聯名設計END
+
+    // 顧客推薦
+    .recommend-container{
+        width: 100%;
+    }
+    .recommend-title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .recommend{
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+        width: 100%;
+    }
+    .recommend-item{
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+
+    // 顧客推薦END
+
+    // 聯絡我們
+    .contact-container{
+        width: 75%;
+    }
+    .contact-tilte{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }  
+    .contact-comfirm{
+        width: 100%;
+        padding: 16px 0px;
+        margin-bottom: 48px;
+    }
+    // 聯絡我們END
+}
+// RWD手機END
