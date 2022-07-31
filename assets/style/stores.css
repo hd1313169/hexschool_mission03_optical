@@ -1,7 +1,7 @@
-.location-title {
+.stores-title {
   margin-top: 96px; }
 
-.location-title::before {
+.stores-title::before {
   display: inline-block;
   content: "";
   vertical-align: middle;
@@ -10,7 +10,7 @@
   height: 48px;
   margin-right: 16px; }
 
-.locations-select {
+.stores-select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@
           align-items: center;
   margin-bottom: 41px; }
 
-.locations-dropDown {
+.stores-dropDown {
   width: 23.4%;
   font-size: 18px;
   line-height: 1.44;
@@ -29,76 +29,90 @@
   border-radius: 0%;
   padding: 6px 12px; }
 
-.locations {
-  margin: 0 auto;
+.stores {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 80px; }
 
-.locations-item {
-  width: 30%;
+.stores-item {
+  width: 40.6%;
   margin-bottom: 48px; }
 
-.locations-item-title {
+.stores-item-title {
   padding: 8px 24px;
   border: 1px solid #00000020; }
 
-.locations-item-content {
+.stores-item-content {
   padding: 16px 24px;
   border: 1px solid #00000020; }
 
 .material-symbols-outlined {
   margin-right: 11px; }
 
-.locations-btn {
-  display: block;
-  font-size: 19px;
-  text-align: center;
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #00000020;
-  padding: 16px 0; }
-
-.locations-btn:hover {
-  background-color: #AA0601; }
+.stores-map {
+  width: 57.6%;
+  max-height: 100%;
+  background-image: url(../images/map_demo.png);
+  background-size: cover;
+  background-position: center center; }
 
 @media (max-width: 992px) {
-  .location-container {
+  .stores-container {
     width: 100%;
     padding: 0 36px 0 35px;
     margin-bottom: 80px; }
-  .locations-dropDown {
+  .stores-title {
+    margin-top: 80px; }
+  .stores {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .stores-dropDown {
     width: 30.6%; }
-  .locations {
+  .stores {
     margin: 0 auto;
     margin-bottom: 24px; }
-  .locations-item {
-    width: 48%;
-    margin-right: 0; }
-  .locations-item-r {
-    margin-right: 24px; } }
+  .stores-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 24px; }
+    .stores-item img {
+      width: 43.9%;
+      margin-right: 24px; }
+  .stores-item-txt {
+    width: 43.9%; }
+  .stores-map {
+    width: 100%;
+    height: 414px; } }
 
 @media (max-width: 767px) {
-  .location-container {
+  .stores-container {
     width: 100%;
     padding: 0 14px 0 13px; }
-  .location-title {
+  .stores-title {
     font-size: 24px;
+    margin-top: 40px;
     margin-bottom: 24px; }
-  .location-title::before {
+  .stores-title::before {
     height: 36px; }
-  .locations-select h3 {
+  .stores-select h3 {
     font-size: 16px; }
-  .locations-dropDown {
+  .stores-dropDown {
     width: 73.6%; }
-  .locations {
+  .stores {
     margin-bottom: 64px; }
-  .locations-item {
+  .stores-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     margin-right: 0;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+    .stores-item img {
+      width: 100%; }
+  .stores-item-txt {
+    width: 100%; } }
 
-/*# sourceMappingURL=locations.css.map */
+/*# sourceMappingURL=stores.css.map */
