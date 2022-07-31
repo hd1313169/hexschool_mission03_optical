@@ -1,0 +1,134 @@
+// 麵包屑
+.breadcrumb{
+    display: flex;
+    margin-top: 96px;
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+.breadcrumb-divider::after{
+    display: inline-block;
+    content: "/";
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+// 麵包屑END
+
+// 重要標籤
+.article-tag-highlight{
+    display: flex;
+    margin-bottom: 8px;
+}
+.article-tag-highlight a:hover{
+    text-decoration: underline;
+}
+// 重要標籤END
+
+// 部落格文章
+.article-container{
+    display: flex;
+    justify-content: space-between;
+}
+// 部落格文章END
+
+// 文章內容
+.article-content{
+    border-bottom: 1px solid #707070;
+}
+
+.article-tags-list a:hover{
+    text-decoration: underline;
+}
+.article-share{
+    display: flex;
+}
+.article-icon{
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center center;
+}
+.article-pageNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-pageNav-item a:hover{
+    font-weight: 700;
+    color: #AA0601;
+}
+// 文章內容END
+
+
+// 標籤群組
+.article-tags{
+    width: 32%;
+}
+.article-tags-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article-tags-title span{
+    vertical-align: middle;
+}
+// 標籤群組END
+
+// RWD平板
+@media (max-width: 992px){
+
+    // 麵包屑
+    .breadcrumb{
+        margin-top: 8px;
+    }
+    // 麵包屑END
+
+    .pageNav{
+        display: none;
+    }
+    
+}
+// RWD平板END
+
+// RWD手機
+@media (max-width: 767px){
+
+    .article-tags{
+        display: none;
+    }
+
+    .breadcrumb{
+        margin-top: 16px;
+    }
+
+    .article{
+
+        h2{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
+    .article-content{
+
+        border: none;
+
+        li{
+            margin-bottom: 16px;
+        }
+    }
+
+    .article-share{
+        display: none;
+    }
+    
+    .article-pageNav{
+        display: none;
+    }
+
+
+}
+// RWD手機END
+
