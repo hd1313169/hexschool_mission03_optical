@@ -22,13 +22,15 @@
     background-size: cover;
     background-position: center center;
 }
+    .blog-img:hover{
+        filter: brightness(.9);
+    }
 
 .blog-img-link{
     display: block;
     width: 100%;
     height: 100%;
 }
-
 .blog-content{
     width: 50%;
 }
