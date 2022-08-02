@@ -1267,6 +1267,10 @@ label {
   background-size: cover;
   background-position: center center; }
 
+.blog-img:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9); }
+
 .blog-img-link {
   display: block;
   width: 100%;
