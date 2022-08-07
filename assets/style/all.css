@@ -566,9 +566,8 @@ label {
     margin: 0 216px;
     margin-bottom: 24px; }
   .recommend-item {
-    width: calc((100% - 48px) / 2);
-    margin: 0;
-    margin-bottom: 24px; }
+    width: calc((100% - 24px) / 2);
+    margin-right: 0; }
   .tb-mr-24 {
     margin-right: 24px; } }
 
@@ -676,15 +675,15 @@ label {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.category-item-focus {
-  border-bottom: 8px solid #AA0601; }
-
 .category-item {
-  width: 33.3%;
+  width: calc(100% / 3);
   padding: 16px 0;
   border: 1px solid #DCDCDC; }
 
 .category-item:hover {
+  border-bottom: 8px solid #AA0601; }
+
+.category-item-focus {
   border-bottom: 8px solid #AA0601; }
 
 .optical-banner {
@@ -787,7 +786,7 @@ label {
     font-size: 24px;
     margin-right: 0;
     margin-bottom: 24px; }
-  .optical-item-mr {
+  .tb-mr-24 {
     margin-right: 24px; } }
 
 @media (max-width: 767px) {
@@ -840,14 +839,15 @@ label {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.category-item-focus {
-  border-bottom: 8px solid #AA0601; }
-
 .category-item {
-  width: 33.3%;
-  padding: 16px 0; }
+  width: calc(100% / 3);
+  padding: 16px 0;
+  border: 1px solid #DCDCDC; }
 
 .category-item:hover {
+  border-bottom: 8px solid #AA0601; }
+
+.category-item-focus {
   border-bottom: 8px solid #AA0601; }
 
 /* 太陽眼鏡BN */
@@ -879,7 +879,7 @@ label {
       flex-wrap: wrap; }
 
 .newCollection-item {
-  width: 30%; }
+  width: calc((100% - 48px) / 3); }
 
 .newCollection-item a:hover {
   -webkit-filter: brightness(80%);
@@ -954,11 +954,11 @@ label {
     margin-bottom: 80px;
     padding: 0 36px; }
   .newCollection-item {
-    width: 43.2%;
+    width: calc((100% - 24px) / 2);
     font-size: 24px;
     margin-right: 0;
     margin-bottom: 24px; }
-  .newCollection-item-mr {
+  .tb-mr-24 {
     margin-right: 24px; }
   /* 商品目錄END */ }
 
@@ -1044,7 +1044,7 @@ label {
   margin-bottom: 80px; }
 
 .locations-item {
-  width: 30%;
+  width: calc((100% - 48px) / 3);
   margin-bottom: 48px; }
 
 .locations-item-title {
@@ -1081,9 +1081,9 @@ label {
     margin: 0 auto;
     margin-bottom: 24px; }
   .locations-item {
-    width: 48%;
+    width: calc((100% - 24px) / 2);
     margin-right: 0; }
-  .locations-item-r {
+  .tb-mr-24 {
     margin-right: 24px; } }
 
 @media (max-width: 767px) {
