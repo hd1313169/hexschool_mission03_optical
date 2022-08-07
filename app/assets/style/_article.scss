@@ -1,27 +1,29 @@
 // 麵包屑
 .breadcrumb{
     display: flex;
-    margin-top: 96px;
-}
-.breadcrumb a:hover{
-    text-decoration: underline;
-}
-.breadcrumb-divider::after{
-    display: inline-block;
-    content: "/";
-    margin-left: 4px;
-    text-decoration: none;
-}
+    margin-top: 24px;
 
+    a:hover{
+        text-decoration: underline;
+    }
+
+    &-divider::after{
+        display: inline-block;
+        content: "/";
+        margin-left: 4px;
+        text-decoration: none;
+    }
+}
 // 麵包屑END
 
 // 重要標籤
 .article-tag-highlight{
     display: flex;
     margin-bottom: 8px;
-}
-.article-tag-highlight a:hover{
-    text-decoration: underline;
+
+    a:hover{
+        text-decoration: underline;
+    }
 }
 // 重要標籤END
 
@@ -53,10 +55,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.article-pageNav-item a:hover{
-    font-weight: 700;
-    color: #AA0601;
+
+    &-item a:hover{
+        font-weight: 700;
+        color: #AA0601;
+    }
 }
 // 文章內容END
 
@@ -64,13 +67,15 @@
 // 標籤群組
 .article-tags{
     width: 32%;
-}
-.article-tags-list{
-    display: flex;
-    flex-wrap: wrap;
-}
-.article-tags-title span{
-    vertical-align: middle;
+
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-title span{
+        vertical-align: middle;
+    }
 }
 // 標籤群組END
 
@@ -93,9 +98,7 @@
 // RWD手機
 @media (max-width: 767px){
 
-    .article-tags{
-        display: none;
-    }
+    .article
 
     .breadcrumb{
         margin-top: 16px;
@@ -109,26 +112,28 @@
         h3{
             font-size: 16px;
         }
-    }
 
-    .article-content{
+        &-tags{
+            display: none;
+        }
 
-        border: none;
+        &-content{
 
-        li{
-            margin-bottom: 16px;
+            border: none;
+    
+            li{
+                margin-bottom: 16px;
+            }
+        }
+
+        &-share{
+            display: none;
+        }
+    
+        &-pageNav{
+            display: none;
         }
     }
-
-    .article-share{
-        display: none;
-    }
-    
-    .article-pageNav{
-        display: none;
-    }
-
-
 }
 // RWD手機END
 

@@ -1,17 +1,18 @@
 // 部落格導覽
 .blog-title{
     margin-top: 96px;
+
+    &::before{
+        display: inline-block;
+        content: "";
+        vertical-align: middle;
+        background-color: #9F1213;
+        width: 8px;
+        height: 48px;
+        margin-right: 16px;
+    }
 }
 
-.blog-title::before{
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-color: #9F1213;
-    width: 8px;
-    height: 48px;
-    margin-right: 16px;
-}
 .blog-item{
     display: flex;
     position: relative;
@@ -21,16 +22,18 @@
     height: 400px;
     background-size: cover;
     background-position: center center;
-}
-    .blog-img:hover{
+
+    &:hover{
         filter: brightness(.9);
     }
 
-.blog-img-link{
-    display: block;
-    width: 100%;
-    height: 100%;
+    &-link{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
+
 .blog-content{
     width: 50%;
 }
@@ -86,19 +89,24 @@
  
     .blog-tag{
         margin-bottom: 4px;
+
+        h3{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 16px;
+        }
     }
-    .blog-tag h3{
-        font-size: 16px;
-    }
-    .blog-tag p{
-        font-size: 16px;
-    }
+
     .blog-pc-txt{
         display: none;
     }
+
     .blog-tablet-txt{
         display: block;
     }
+
     .blog-btn{
         display: none;
     }
@@ -114,27 +122,33 @@
         font-size: 24px;
         margin-top: 40px;
         margin-bottom: 24px;
+
+        &::before{
+            height: 36px;
+        }
     }
-    .blog-title::before{
-        height: 36px;
-    }
+
     .blog{
         margin-bottom: 64px;
-    }
-    .blog-item{
-        flex-wrap: wrap;
-        margin-bottom: 24px;
-    }
-    .blog-img{
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 8px;
-    }
-    .blog-content{
-        width: 100%;
-    }
-    .blog-tablet-txt{
-        display: none;
+
+        &-item{
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        &-img{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
+        &-content{
+            width: 100%;
+        }
+
+        &-tablet-txt{
+            display: none;
+        }
     }
     /* 部落格END */
 }

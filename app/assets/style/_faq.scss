@@ -1,16 +1,16 @@
 // 常見問題
 .faq-title{
     margin-top: 96px;
-}
 
-.faq-title::before{
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-color: #9F1213;
-    width: 8px;
-    height: 48px;
-    margin-right: 16px;
+    &::before{
+        display: inline-block;
+        content: "";
+        vertical-align: middle;
+        background-color: #9F1213;
+        width: 8px;
+        height: 48px;
+        margin-right: 16px;
+    }
 }
 // 常見問題END
 
@@ -27,8 +27,9 @@
     .faq-title{
         margin-top: 80px;
 
-    // 常見問題END
     }
+        // 常見問題END
+
 }
 // RWD平板END
 
@@ -36,25 +37,28 @@
 @media (max-width: 767px){
 
     // 常見問題
-    .faq-container{
-        width: 100%;
-        padding: 0 14px 0 13px;
-    }
-    .faq-title{
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 24px;
-    }
-    .faq-title::before{
-        height: 36px;
-    }
-   
     .faq{
         margin-bottom: 64px;
-    }
-    .faq-item{
-        margin-right: 0;
-        margin-bottom: 24px;
+
+        &-item{
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &-container{
+            width: 100%;
+            padding: 0 14px 0 13px;
+        }
+
+        &-title{
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 24px;
+    
+            &::before{
+                height: 36px;
+            }
+        }
     }
     // 常見問題END
 }

@@ -1,26 +1,22 @@
 // 商品分類
-.category-container{
-    width: 67.5%;
-    margin: 0 auto;
-    padding: 0 12px;
-}
 
 .category{
     display: flex;
     justify-content: center;
-}
 
-.category-item{
-    width: calc(100% / 3);
-    padding: 16px 0;
-    border: 1px solid #DCDCDC;
-}
-.category-item:hover{
-    border-bottom: 8px solid #AA0601;
-}
+    &-item{
+        width: calc(100% / 3);
+        padding: 16px 0;
+        border: 1px solid #DCDCDC;
 
-.category-item-focus{
-    border-bottom: 8px solid #AA0601;
+        &:hover{
+            border-bottom: 8px solid #AA0601;
+        }
+
+        &-focus{
+            border-bottom: 8px solid #AA0601;
+        }
+    }  
 }
 // 商品分類END
 
@@ -28,18 +24,20 @@
 .optical-banner{
     display: flex;
     height: 296px;
-}
-.optical-banner-img-1{
-    width: 50%;
-    background-image: url(../images/product-header-1.png);
-    background-size: cover;
-    background-position: center;
-}
-.optical-banner-img-2{
-    width: 50%;
-    background-image: url(../images/product-header-2.png);
-    background-size: cover;
-    background-position: center;
+
+    &-img-1{
+        width: 50%;
+        background-image: url(../images/product-header-1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-img-2{
+        width: 50%;
+        background-image: url(../images/product-header-2.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 // bn END
 
@@ -47,38 +45,41 @@
 .optical{
     display: flex;
     flex-wrap: wrap;
-}
 
-// 品項
-.optical-item{
-    width: calc((100% - 72px) / 4);
-
-    a:hover{
-        filter: brightness(80%);
+    &-item{
+        width: calc((100% - 72px) / 4);
+    
+        a:hover{
+            filter: brightness(80%);
+        }
     }
-}
-.optical-content{
-    display: flex;
-    justify-content: space-between;
-}
-.optical-color{
-    display: flex;
-    justify-content: start;
-}
-.optical-color-1{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-color: #5F3E2D;
-    border-radius: 4px;
-}
-.optical-color-2{
-    display: inline-block;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    background-color: #B75929;
-    border-radius: 4px;
+
+    &-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-color{
+        display: flex;
+        justify-content: start;
+
+        &-1{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: #5F3E2D;
+            border-radius: 4px;
+        }
+
+        &-2{
+            display: inline-block;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #B75929;
+            border-radius: 4px;
+        }
+    }
 }
 // 商品目錄END
 
@@ -86,61 +87,65 @@
 // RWD平板
 @media (max-width: 992px){
 
-        // 商品分類
-        .category-container{
-            width: 100%;
-        }
-        .category-item{
-            width: 33.3%;
-            padding: 16px 0;
-        }
-        .category-item a{
+    // 商品分類
+    .category-container{
+        width: 100%;
+    }
+    
+    .category-item{
+        width: 33.3%;
+        padding: 16px 0;
+
+        a{
             font-size: 24px;
             font-weight: 700;
         }
-        // 商品分類END
-
+    }
+    // 商品分類END
 
     // bn
     .optical-banner{
         margin-bottom: 80px;
-    }
-    .optical-banner-img-1{
-        background-image: url(../images/product-header-sm-3.png);
-    }
-    .optical-banner-img-2{
-        width: 50%;
-        background-image: url(../images/product-header-sm-4.png);
-        background-size: cover;
-        background-position: center;
+
+        &-img-1{
+            background-image: url(../images/product-header-sm-3.png);
+        }
+
+        &-img-2{
+            width: 50%;
+            background-image: url(../images/product-header-sm-4.png);
+            background-size: cover;
+            background-position: center;
+        }
     }
     // bn END
 
     // 商品目錄
-    .optical-container{
-        width: 100%;
-    
-        h2{
-            font-size: 42px;
-        }
-        h3{
-            font-size: 32px;
-            margin-bottom: 32px;
-        }
-    }
-
     .optical{
         flex-wrap: wrap;
         margin-bottom: 80px;
         padding: 0 36px;
         justify-content: center;
-    }
 
-    .optical-item{
-        width: calc((100% - 24px) / 2);        
-        font-size: 24px;
-        margin-right: 0;
-        margin-bottom: 24px;
+        &-container{
+            width: 100%;
+        
+            h2{
+                font-size: 42px;
+            }
+            h3{
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &-item{
+            width: calc((100% - 24px) / 2);        
+            font-size: 24px;
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
     }
 
     .tb-mr-24{
@@ -154,61 +159,62 @@
 @media (max-width: 767px){
 
     // 商品分類
-    .category-container{
-        margin-bottom: 0px;
-    }
     .category{
         justify-content: space-between;
-    }
-    .category-item a{
-        font-size: 16px;
-        font-weight: 700;
+
+        &-container{
+            margin-bottom: 0px;
+        }
+
+        &-item a{
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
     // 商品分類END
-
 
     // bn
     .optical-banner{
         height: 136px;
         margin-bottom: 40px;
-    }
 
-    .optical-banner-img-1{
-        background-image: url(../images/product-header-sm-1.png);
-    }
-    .optical-banner-img-2{
-        width: 50%;
-        background-image: url(../images/product-header-sm-2.png);
-        background-size: cover;
-        background-position: center;
-    }
+        &-img-1{
+            background-image: url(../images/product-header-sm-1.png);
+        }
 
-        // bn END   
+        &-img-2{
+            width: 50%;
+            background-image: url(../images/product-header-sm-2.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    // bn END   
 
 
     // 商品目錄
-    .optical-container{
-        width: 100%;
-        padding: 0 13px;
-
-        h2{
-            font-size: 24px;
-        }
-        h3{
-            font-size: 24px;
-        }
-    }
-
     .optical{
         flex-wrap: wrap;
         margin-bottom: 64px;
-    }
 
-    .optical-item{
-        width: 100%;
-        font-size: 24px;
-        margin-right: 0;
-        margin-bottom: 24px;
+        &-container{
+            width: 100%;
+            padding: 0 13px;
+    
+            h2{
+                font-size: 24px;
+            }
+            h3{
+                font-size: 24px;
+            }
+        }
+
+        &-item{
+            width: 100%;
+            font-size: 24px;
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
     }
     // 商品目錄END
 }

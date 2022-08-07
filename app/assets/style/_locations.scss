@@ -1,16 +1,18 @@
 // 門市據點 
 .location-title{
     margin-top: 96px;
+
+    &::before{
+        display: inline-block;
+        content: "";
+        vertical-align: middle;
+        background-color: #9F1213;
+        width: 8px;
+        height: 48px;
+        margin-right: 16px;
+    }
 }
-.location-title::before{
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-color: #9F1213;
-    width: 8px;
-    height: 48px;
-    margin-right: 16px;
-}
+
 .locations-select{
     display: flex;
     align-items: center;
@@ -33,33 +35,39 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 80px;
+
+    &-item{
+        width: calc((100% - 48px) / 3);
+        margin-bottom: 48px;
+
+        &-title{
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+        }
+
+        &-content{
+            padding: 16px 24px;
+            border: 1px solid #00000020;
+        }
+    }
+
+    &-btn{
+        display: block;
+        font-size: 19px;
+        text-align: center;
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #00000020;
+        padding: 16px 0;
+
+        &:hover{
+            background-color: #AA0601;
+        }
+    }
 }
-.locations-item{
-    width: calc((100% - 48px) / 3);
-    margin-bottom: 48px;
-}
-.locations-item-title{
-    padding: 8px 24px;
-    border: 1px solid #00000020;
-}
-.locations-item-content{
-    padding: 16px 24px;
-    border: 1px solid #00000020;
-}
+
 .material-symbols-outlined{
     margin-right: 11px;
-}
-.locations-btn{
-    display: block;
-    font-size: 19px;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #00000020;
-    padding: 16px 0;
-}
-.locations-btn:hover{
-    background-color: #AA0601;
 }
 // 門市據點END 
 
@@ -79,11 +87,13 @@
     .locations{
         margin: 0 auto;
         margin-bottom: 24px;
+
+        &-item{
+            width: calc((100% - 24px) / 2);
+            margin-right: 0;
+        }
     }
-    .locations-item{
-        width: calc((100% - 24px) / 2);
-        margin-right: 0;
-    }
+
     .tb-mr-24{
         margin-right: 24px;
     }
@@ -103,23 +113,28 @@
         font-size: 24px;
         margin-top: 40px;
         margin-bottom: 24px;
+
+        &::before{
+            height: 36px;
+        }
     }
-    .location-title::before{
-        height: 36px;
-    }
-    .locations-select h3{
-        font-size: 16px;
-    }
-    .locations-dropDown{
-        width: 73.6%;
-    }
+
     .locations{
         margin-bottom: 64px;
-    }
-    .locations-item{
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 40px;
+
+        &-select h3{
+            font-size: 16px;
+        }
+
+        &-dropDown{
+            width: 73.6%;
+        }
+
+        &-item{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
     }
     // 門市據點END
 }

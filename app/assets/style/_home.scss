@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .slogan{
     display: flex;
     flex-direction: column;
@@ -17,10 +18,10 @@
         display: block;
         background-color: #AA0601;
         padding: 6px 12px;
-    }
 
-   a:hover{
-        background-color: #650300;
+        &:hover{
+            background-color: #650300;
+        }
     }
 }
 // banner END
@@ -29,13 +30,15 @@
 .intro{
     display: flex;
     flex-wrap: wrap;
-}
-.intro-item{
-    width: calc((100% - 72px) / 4);
-}
-.intro-icon{
-    width: 84px;
-    height: 84px;
+
+    &-item{
+        width: calc((100% - 72px) / 4);
+    }
+
+    &-icon{
+        width: 84px;
+        height: 84px;
+    }
 }
 // 品牌介紹END
 
@@ -43,13 +46,13 @@
 .classicalSeries{
     display: flex;
     flex-wrap: wrap;
-}
 
-.classicalSeries-item{
-    width: calc((100% - 48px) / 3);
-
-    a:hover{
-        filter:brightness(80%);
+    &-item{
+        width: calc((100% - 48px) / 3);
+    
+        a:hover{
+            filter:brightness(80%);
+        }
     }
 }
 // 經典系列END
@@ -77,10 +80,10 @@
     a p{
         padding: 8px 0;
     }
-}
 
-.co-brand-item{
-    background-color: #fff;
+    &-item{
+        background-color: #fff;
+    }
 }
 // 聯名設計 end
 
@@ -88,16 +91,16 @@
 .recommend{
     display: flex;
     flex-wrap: wrap;
-}
 
-.recommend-item{
-    width: calc((100% - 72px) / 4);
-    border: 1px solid #DEE2E6;
-    box-shadow: 0 2px 6px #00000029; 
-}
+    &-item{
+        width: calc((100% - 72px) / 4);
+        border: 1px solid #DEE2E6;
+        box-shadow: 0 2px 6px #00000029; 
+    }
 
-.recommend-content{
-    padding: 16px;
+    &-content{
+        padding: 16px;
+    }
 }
 // 顧客推薦END
 
@@ -169,10 +172,12 @@ label{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &-container{
+            width: 100%;
+        }
     }
-    .header-container{
-        width: 100%;
-    }
+
     .slogan{
         justify-content: center;
         align-items: center;
@@ -190,18 +195,20 @@ label{
     // banner END
 
     // 品牌介紹 
-    .intro-title{
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
     .intro{
         flex-wrap: wrap;
         margin-bottom: 64px;
+
+        &-title{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        &-item{
+            width: 100%;
+            margin-bottom: 36px;
+        }   
     }
-    .intro-item{
-        width: 100%;
-        margin-bottom: 36px;
-    }   
     // 品牌介紹 END 
 
     // 經典系列
@@ -245,11 +252,11 @@ label{
         a p{
             font-size: 32px;
         }
-    }
-    .co-brand-item{
-        margin-bottom: 24px;
-    }
 
+        &-item{
+            margin-bottom: 24px;
+        }
+    }
     // 聯名設計END
 
     // 顧客推薦
@@ -264,12 +271,12 @@ label{
         flex-wrap: wrap;
         margin-bottom: 64px;
         width: 100%;
-    }
-    .recommend-item{
-        width: 100%;
-        margin: 0 0 24px 0;
-    }
 
+        &-item{
+            width: 100%;
+            margin: 0 0 24px 0;
+        }
+    }
     // 顧客推薦END
 
     // 聯絡我們
