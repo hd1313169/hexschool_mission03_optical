@@ -214,9 +214,9 @@ a {
 
 /* margin end */
 .container {
-  width: 67.5%;
   margin: 0 auto;
-  padding: 0 12px; }
+  padding: 0 12px;
+  max-width: 1320px; }
 
 .nav-bg {
   background-color: #AA0601;
