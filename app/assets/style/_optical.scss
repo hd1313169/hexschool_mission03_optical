@@ -51,7 +51,7 @@
 
 // 品項
 .optical-item{
-    width: 22%;
+    width: calc((100% - 72px) / 4);
 
     a:hover{
         filter: brightness(80%);
@@ -137,7 +137,7 @@
     }
 
     .optical-item{
-        width: 43.8%;
+        width: calc((100% - 24px) / 2);        
         font-size: 24px;
         margin-right: 0;
         margin-bottom: 24px;

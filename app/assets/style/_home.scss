@@ -28,9 +28,10 @@
 // 品牌介紹
 .intro{
     display: flex;
+    flex-wrap: wrap;
 }
 .intro-item{
-    width: 23.6%;
+    width: calc((100% - 72px) / 4);
 }
 .intro-icon{
     width: 84px;
@@ -41,10 +42,11 @@
 // 經典系列
 .classicalSeries{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .classicalSeries-item{
-    width: 30%;   
+    width: calc((100% - 48px) / 3);
 
     a:hover{
         filter:brightness(80%);
@@ -55,7 +57,6 @@
 
 // 聯名設計
 .co-brand-bg{
-    /* height: 608px; */
     background-image: url(../images/index-bg.png);
     background-size: cover;
     padding: 80px 0;
@@ -86,10 +87,11 @@
 // 顧客推薦
 .recommend{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .recommend-item{
-    width: 23.6%;  
+    width: calc((100% - 72px) / 4);
     border: 1px solid #DEE2E6;
     box-shadow: 0 2px 6px #00000029; 
 }
@@ -134,8 +136,25 @@ label{
 // RWD平板
 @media (max-width: 992px){
 
-    .classicalSeries-item a{
-        font-size: 28px;
+    .intro-item{
+        width: calc((100% - 24px) / 2);
+        margin: 0;
+    }
+
+    .classicalSeries-item{
+        width: 100%;
+        margin: 0 216px;
+        margin-bottom: 24px;
+    }
+
+    .recommend-item{
+        width: calc((100% - 48px) / 2);
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .tb-mr-24{
+        margin-right: 24px;
     }
 }
 // RWD平板END
