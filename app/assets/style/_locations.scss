@@ -35,7 +35,7 @@
     margin-bottom: 80px;
 }
 .locations-item{
-    width: 30%;
+    width: calc((100% - 48px) / 3);
     margin-bottom: 48px;
 }
 .locations-item-title{
@@ -81,10 +81,10 @@
         margin-bottom: 24px;
     }
     .locations-item{
-        width: 48%;
+        width: calc((100% - 24px) / 2);
         margin-right: 0;
     }
-    .locations-item-r{
+    .tb-mr-24{
         margin-right: 24px;
     }
     // 門市據點END 

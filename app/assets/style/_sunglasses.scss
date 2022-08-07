@@ -10,15 +10,16 @@
     justify-content: center;
 }
 
-.category-item-focus{
+.category-item{
+    width: calc(100% / 3);
+    padding: 16px 0;
+    border: 1px solid #DCDCDC;
+}
+.category-item:hover{
     border-bottom: 8px solid #AA0601;
 }
 
-.category-item{
-    width: 33.3%;
-    padding: 16px 0;
-}
-.category-item:hover{
+.category-item-focus{
     border-bottom: 8px solid #AA0601;
 }
 // 商品分類END
@@ -45,12 +46,13 @@
 /* 太陽眼鏡BN END*/
 
 /* 商品目錄 */
+
 .newCollection{
     display: flex;
     flex-wrap: wrap;
 }
 .newCollection-item{
-    width: 30%;
+    width: calc((100% - 48px) / 3);
 }
 .newCollection-item a:hover{
     filter: brightness(80%);
@@ -135,12 +137,12 @@
     }
 
     .newCollection-item{
-        width: 43.2%;
+        width: calc((100% - 24px) / 2);        
         font-size: 24px;
         margin-right: 0;
         margin-bottom: 24px;
     }
-    .newCollection-item-mr{
+    .tb-mr-24{
         margin-right: 24px;
     }
         /* 商品目錄END */
