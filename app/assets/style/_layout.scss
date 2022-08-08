@@ -206,12 +206,13 @@
         flex-wrap: wrap;  
         li{
             width: 50%;
-            padding: 12px 62px;
             border: 1px solid #fff;
         }
 
         a{
+            display: inline-block;
             margin: 0 auto;
+            padding: 12px 62px;
             font-size: 14px;
         }
     }
